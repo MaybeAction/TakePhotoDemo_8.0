@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maybe.takephotodemo_80.MainActivity">
+    <ImageView
+        android:id="@+id/iv_center"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerInParent="true"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+ 
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_center"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/iv_center"
+        android:layout_toRightOf="@+id/iv_center"
+        android:text="选取图片" />
+
+    <Button
+        android:id="@+id/take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_center"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/iv_center"
+        android:layout_toStartOf="@+id/iv_center"
+        android:text="拍照" />
+
+</RelativeLayout>
